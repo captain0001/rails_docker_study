@@ -16,9 +16,6 @@ jobs:
       image:                 circleci/classic:edge
     steps:
       - checkout
-      - run:
-          name:              docker-compose up -d
-          command:           docker-compose up -d
 # 順番を制御するworkflow
 workflows:
   build_and_test_and_deploy:
